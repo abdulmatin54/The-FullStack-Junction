@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- Images: The <img> tag is used to embed images in HTML -->
+        <img height="230" src="image.png" alt="Train image">
+
+        <!-- Tables: Used to display tabular data -->
+    <table border="1">
+        <caption>Employee Details</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Fav Language</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Harry</td>
+                <td>Programmer</td>
+                <td>JavaScript</td>
+            </tr>
+            <tr>
+                <td colspan="2">Sam</td> <!-- colspan merges two columns into one -->
+                <td rowspan="2">Java</td> <!-- rowspan merges two rows into one -->
+            </tr>
+            <tr>
+                <td colspan="2">Sam</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Sam</td>
+                <td rowspan="2">foot</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <!-- Unordered List: Displays items with bullets -->
+    <ul type="square"> <!-- Other types: disc (default), circle -->
+        <li>Harry</li>
+        <li>Rohan</li>
+        <li>Shubham</li>
+    </ul>
+
+    <!-- Ordered List: Displays items with numbers or letters -->
+    <ol type="A"> <!-- Types: 1 (default), A, a, I, i -->
+        <li>Harry</li>
+        <li>Rohan</li>
+        <li>Shubham</li>
+    </ol>
+
+    <!-- Definition List: Used to define terms and their descriptions -->
+    <dl>
+        <dt>HTML</dt> <!-- Term -->
+        <dd>HyperText Markup Language</dd> <!-- Description -->
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        <dt>JavaScript</dt>
+        <dd>Scripting language for web development</dd>
+    </dl>
+
+    <!-- Nested Lists: Lists inside lists for hierarchy -->
+    <ul>
+        <li>Fruits
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Orange</li>
+            </ul>
+        </li>
+        <li>Vegetables
+            <ul>
+                <li>Carrot</li>
+                <li>Spinach</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
