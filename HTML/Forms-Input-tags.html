@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <!-- Text Input with required & pattern validation -->
+        <div>
+            <label for="username">Username (Only letters, 5-15 characters):</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" 
+                   pattern="[A-Za-z]{5,15}" required>
+        </div>
+        
+        <!-- Email Input with built-in validation -->
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        
+        <!-- Password Input with minlength, maxlength, and pattern -->
+        <div>
+            <label for="password">Password (Min 8 characters, at least 1 number):</label>
+            <input type="password" id="password" name="password" pattern="(?=.*\d).{8,}" required>
+        </div>
+        
+        <!-- Radio Buttons for Gender Selection -->
+        <div>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        
+        <!-- Checkbox for Subscription -->
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to newsletter</label>
+        </div>
+        
+        <!-- Dropdown Selection with Optgroup -->
+        <div>
+            <label for="courses">Choose a Course:</label>
+            <select name="courses" id="courses" required>
+                <optgroup label="Frontend">
+                    <option value="html">HTML & CSS</option>
+                    <option value="javascript">JavaScript</option>
+                </optgroup>
+                <optgroup label="Backend">
+                    <option value="nodejs">Node.js</option>
+                    <option value="python">Python</option>
+                </optgroup>
+            </select>
+        </div>
+        
+        <!-- Textarea for Comments -->
+        <div>
+            <label for="comment">Your Comments:</label>
+            <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Enter your feedback..."></textarea>
+        </div>
+        
+        <!-- File Upload Input -->
+        <div>
+            <label for="resume">Upload Resume (PDF only, max 2MB):</label>
+            <input type="file" id="resume" name="resume" accept=".pdf" required>
+        </div>
+        
+        <!-- Date & Time Picker -->
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        
+        <div>
+            <label for="appointment">Preferred Interview Time:</label>
+            <input type="datetime-local" id="appointment" name="appointment">
+        </div>
+        
+        <!-- Range Slider for Experience Level -->
+        <div>
+            <label for="experience">Experience Level (0-10 years):</label>
+            <input type="range" id="experience" name="experience" min="0" max="10" value="2">
+        </div>
+        
+        <!-- Hidden Field (Can be used for tracking purposes) -->
+        <input type="hidden" name="form_id" value="web-dev-application">
+        
+        <!-- Submit & Reset Buttons -->
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
