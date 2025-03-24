@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- Video Element -->
+     <h2>Video Element</h2>
+     <video src="video.mp4" height="255" controls loop muted poster="thumbnail.jpg">
+         Your browser does not support the video tag.
+     </video>
+     <!-- Attributes: 
+         controls - Displays play, pause, volume, etc.
+         loop - Loops the video after it ends.
+         muted - Mutes the video by default.
+         poster - Shows an image before video plays.
+     -->
+ 
+     <!-- Audio Element -->
+     <audio src="audio.mp3" controls autoplay loop muted>
+         Your browser does not support the audio tag.
+     </audio>
+     <!-- Attributes:
+         autoplay - Starts playing automatically (requires user interaction on some browsers).
+         loop - Repeats the audio after it ends.
+         muted - Mutes the audio by default.
+     -->
+ 
+     <!-- SVG Graphics -->
+     <h2>SVG Graphics</h2>
+     <svg height="100" width="100">
+         <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+     </svg>
+     <p>SVG is a vector graphic format supported in HTML.</p>
+     <img src="image.svg" alt="SVG Example" width="100">
+ 
+     <!-- Iframe for Embedding External Content -->
+     <iframe src="https://www.example.com" width="600" height="400" title="Example Website"></iframe>
+     <!-- Attributes:
+         src - URL of the page to embed.
+         width/height - Defines the frame size.
+     -->
+ 
+     <!-- Embedding YouTube Videos -->
+     <h2>Embedding YouTube Videos</h2>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/tVzUXW6siu0" title="YouTube Video"
+         frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</body>
+</html>
