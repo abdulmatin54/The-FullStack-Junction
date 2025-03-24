@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block vs Inline Elements</title>
+    <style>
+        /* Style for Block Elements */
+        header, nav, ul, li, h1, h2, h3, p, section, article, form, footer {
+            border: 2px solid blue;
+            margin: 10px;
+            padding: 10px;
+            display: block;
+        }
+
+        /* Style for Inline Elements */
+        a, strong, em, time, abbr, code, label, input, button, q {
+            border: 1px dashed red;
+            padding: 2px;
+            display: inline;
+        }
+
+        /* Additional styling for better visibility */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        input {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Block Elements -->
+    <header>
+        <h1>My Website</h1> <!-- Block -->
+        <nav>
+            <ul> <!-- Block -->
+                <li><a href="#">Home</a></li>  <!-- Block (li), Inline (a) -->
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section> <!-- Block -->
+        <h2>About</h2> <!-- Block -->
+        <p>This is a <strong>short</strong> example using <em>HTML elements</em>.</p> 
+        <!-- Block (p), Inline (strong, em) -->
+        <p>Today's date: <time datetime="2025-03-24">March 24, 2025</time>. </p> 
+        <!-- Block (p), Inline (time) -->
+    </section>
+
+    <article> <!-- Block -->
+        <h3>Article</h3> <!-- Block -->
+        <p>HTML stands for <abbr title="HyperText Markup Language">HTML</abbr>.</p> 
+        <!-- Block (p), Inline (abbr) -->
+        <p>Code example: <code>console.log('Hello');</code></p> 
+        <!-- Block (p), Inline (code) -->
+    </article>
+
+    <!-- Block Elements (Form) -->
+    <form> 
+        <label for="name">Name:</label> <!-- Inline -->
+        <input type="text" id="name"> <!-- Inline -->
+        <button type="submit">Submit</button> <!-- Inline -->
+    </form>
+
+    <!-- Block Elements -->
+    <footer>
+        <p>&copy; 2025 My Website | <q>Keep learning!</q></p> 
+        <!-- Block (p), Inline (q) -->
+    </footer>
+
+</body>
+</html>
