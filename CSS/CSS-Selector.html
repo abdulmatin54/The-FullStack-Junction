@@ -1,0 +1,181 @@
+<style>
+    /* Universal Selector: Selects all elements */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Element Selector: Selects all instances of a specific tag */
+    p {
+        color: blue;
+    }
+
+    /* Class Selector: Selects all elements with a specific class */
+    .highlight {
+        background-color: yellow;
+    }
+
+    /* ID Selector: Selects a specific element with an ID */
+    #unique {
+        font-weight: bold;
+    }
+
+    /* Grouping Selector: Applies same styles to multiple selectors */
+    h1, h2, h3 {
+        font-family: Arial, sans-serif;
+    }
+
+    /* Descendant Selector: Selects elements inside another element */
+    div p {
+        color: green;
+    }
+
+    /* Child Selector: Selects direct child elements only */
+    div > p {
+        font-style: italic;
+    }
+
+    /* Adjacent Sibling Selector: Selects the next immediate sibling */
+    h1 + p {
+        text-decoration: underline;
+    }
+
+    /* General Sibling Selector: Selects all siblings after the first element */
+    h1 ~ p {
+        font-size: 14px;
+    }
+
+    /* Attribute Selector: Selects elements with a specific attribute */
+    input[type="text"] {
+        border: 1px solid black;
+    }
+
+    /* Attribute Selector (Contains): Selects elements with a specific substring in attribute */
+    a[href*="google"] {
+        color: red;
+    }
+    [title~="flower"] {
+    border: 5px solid yellow;
+     }
+    /* Pseudo-class: Hover Effect */
+    button:hover {
+        background-color: lightblue;
+    }
+
+    /* Pseudo-class: First Child */
+    li:first-child {
+        font-weight: bold;
+    }
+
+    /* Pseudo-class: Last Child */
+    li:last-child {
+        font-style: italic;
+    }
+
+    /* Pseudo-class: nth-child(even) */
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    /* Pseudo-class: Focus */
+    input:focus {
+        border-color: blue;
+    }
+
+    /* Pseudo-element: First Letter */
+    p::first-letter {
+        font-size: 2em;
+        color: red;
+    }
+
+    /* Pseudo-element: First Line */
+    p::first-line {
+        font-weight: bold;
+    }
+
+    /* Pseudo-element: Selection */
+    ::selection {
+        background-color: cyan;
+    }
+
+    /* Not Selector: Selects everything except the given selector */
+    p:not(.special) {
+        text-decoration: line-through;
+    }
+</style>
+<body>
+      <!-- Universal Selector Example -->
+<p>This paragraph is affected by the universal selector (removes default margin/padding).</p>
+
+<!-- Element Selector Example -->
+<p>This paragraph is blue due to the element selector.</p>
+
+<!-- Class Selector Example -->
+<p class="highlight">This paragraph has a yellow background due to the class selector.</p>
+
+<!-- ID Selector Example -->
+<p id="unique">This paragraph is bold because of the ID selector.</p>
+
+<!-- Grouping Selector Example -->
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<p>These headings have Arial font due to the grouping selector.</p>
+
+<!-- Descendant Selector Example -->
+<div>
+    <p>This paragraph inside a div is green.</p>
+</div>
+
+<!-- Child Selector Example -->
+<div>
+    <p>This paragraph inside a div is also italic because of the child selector.</p>
+    <section>
+        <p>This paragraph inside a section inside div is NOT italic (not a direct child).</p>
+    </section>
+</div>
+
+<!-- Adjacent Sibling Selector Example -->
+<h1>Heading Before Paragraph</h1>
+<p>This paragraph is underlined because it comes right after an h1.</p>
+
+<!-- General Sibling Selector Example -->
+<h1>Main Heading</h1>
+<p>This paragraph is 14px due to the general sibling selector.</p>
+<p>Another paragraph with the same styling.</p>
+
+<!-- Attribute Selector Examples -->
+<input type="text" placeholder="This input has a border due to attribute selector">
+<a href="https://www.google.com">This link to Google is red due to the attribute selector.</a>
+
+<!-- Attribute Contains Selector Example -->
+<img src="flower.jpg" title="beautiful flower">This image has a yellow border.</img>
+
+<!-- Pseudo-class Examples -->
+<button>Hover over me</button>
+
+<ul>
+    <li>First item (bold due to first-child selector)</li>
+    <li>Middle item</li>
+    <li>Last item (italic due to last-child selector)</li>
+</ul>
+
+<table>
+    <tr><td>Row 1</td></tr>
+    <tr><td>Row 2 (even row - gray background)</td></tr>
+    <tr><td>Row 3</td></tr>
+    <tr><td>Row 4 (even row - gray background)</td></tr>
+</table>
+
+<input type="text" placeholder="Click me to see focus effect">
+
+<!-- Pseudo-element Examples -->
+<p>This paragraph demonstrates ::first-letter and ::first-line effects.</p>
+
+<!-- ::selection Example -->
+<p>Select some text in this paragraph to see the cyan highlight.</p>
+
+<!-- :not Selector Example -->
+<p class="special">This paragraph is not struck through.</p>
+<p>This paragraph is struck through because of the :not selector.</p>
+</body>
