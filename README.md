@@ -21,5 +21,7 @@ Throughout this course, you'll gain hands-on experience in:
 ## **Consistent Updates & Learning Path**  
 I am committed to providing **regular updates**, with new source code additions **almost every day**. Follow along with our structured schedule to accelerate your learning! 📅  
 
+Read my in-deph blog post on Hashnode:https://hashnode.com/@matin54
+
 
 ---
