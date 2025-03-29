@@ -1,6 +1,6 @@
 ---
 
-# **Welcome to The-FullStack-Junction tutorials! 🚀**  
+# **Welcome to The-FullStack-Sprint tutorials! 🚀**  
 
 ## **Why This Course?**  
 If you've been eager to explore web development but struggle but don't find proper place to master each topic clearly, you've come to the right place! This **comprehensive Hindi web development course** is designed to take you from **absolute beginner** to **pro-level developer**, with structured, step-by-step guidance.  
