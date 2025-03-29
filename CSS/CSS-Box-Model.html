@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block vs Inline Elements & Box Model</title>
+    <style>
+        /* Block elements take full width by default */
+        .block {
+            display: block;
+            width: 200px;
+            background-color: lightblue;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid blue;
+        }
+        
+        /* Inline elements only take the space of their content */
+        .inline {
+            display: inline;
+            background-color: lightcoral;
+            padding: 5px;
+            border: 1px solid red;
+        }
+
+        /* Box Model Example */
+        .box-model {
+            width: 200px;
+            background-color: lightgreen;
+            margin: 20px; /* Space outside the border */
+            padding: 15px; /* Space inside the border */
+            border: 3px solid green; /* Border around the element */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Block elements (take full width) -->
+    <div class="block">I am a Block Element (DIV)</div>
+    <p class="block">I am also a Block Element (P)</p>
+    
+    <!-- Inline elements (take only content width) -->
+    <span class="inline">I am an Inline Element (SPAN)</span>
+    <a href="#" class="inline">I am an Inline Element (A)</a>
+    
+    <!-- Box Model Example -->
+    <div class="box-model">Box Model Example (Margin, Padding, Border)</div>
+
+</body>
+</html>
